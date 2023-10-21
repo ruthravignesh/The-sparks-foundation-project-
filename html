@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Spark Foundation </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="rstyles.css">
+
+    <body>
+        <header class="bg-red-900 text-white body-font">
+            <div class="container mx-auto flex flex-wrap items-center p-3">
+                <a class="flex items-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 p-1 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-lg">The Spark Foundation</span>
+                </a>
+                <nav class="md:ml-auto md:mr-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-lg justify-center">
+                    <a class="mr-4 hover:text-white" href="#home">Home</a>
+                    <a class="mr-4 hover:text-white" href="#contact">Contact us</a>
+                    <a class="mr-4 hover:text-white" href="#benefits">Benefits of Donation</a>
+                    <a class="mr-4 hover:text-white" href="#profile">Profile</a>
+                </nav>
+                <form action="/search" method="GET" class="flex ml-auto">
+                    <input type="text" class="search-box rounded-l-full p-2" name="q" placeholder="Search..." style="border: 1px solid #ccc;">
+                    <button type="submit" class="search-button p-2" style="background-color: #FF5733; color: #fff; border: 1px solid #FF5733;">Find</button>
+                </form>
+            </div>
+        </header>
+        <section id="home" class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap py-24">
+                <div class="lg:w-1/2 w-full lg:pr-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> It's easy to be generous with other
+                                    <br class="d-lg-none d-block">people's money.
+                                </h1>
+                                <img src="data:image/png;base64,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" alt="Image 2" style="border-radius: 50%; max-width: 80%; height: auto;">
+                                <p class="mb-8 leading-relaxed">“Love can be a natural endowment, a present, or a gift. If it is not just a donation, it can be a divine talent. Since love is a silver bullet, it can make the unimaginable possible through the power of its inspiration. ("Love as dizzy
+                                    as a cathedral")” ― Erik Pevernagie </p>
+                                <div class="flex justify-center">
+                                    <form>
+                                        <button id="rzp-button1"  class="custom-button">Donate Now</button>
+                                        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+                                        <script>
+                                            var options = {
+                                                "key": "rzp_test_fpadagrW98THfl", // Replace with your Razorpay Key ID
+                                                "amount": "500", // Replace with the desired amount in paise (e.g., 100 for ₹1)
+                                                "currency": "INR",
+                                                "name": "RuthraVignesh", // Replace with your business name
+                                                "description": "Test Transaction",
+                                                "image": "https://example.com/your_logo", // Replace with your logo URL
+                                                "order_id": "order_MqqbNrYQPvthxg", // Replace with the actual Order ID
+                                                "handler": function (response) {
+                                                    // Handle the payment success here (e.g., display a success message).
+                                                    alert("Payment Successful");
+                                                },
+                                                "prefill": {
+                                                    "name": "Gaurav Kumar",
+                                                    "email": "gaurav.kumar@example.com",
+                                                    "contact": "9000090000"
+                                                },
+                                                "notes": {
+                                                    "address": "Razorpay Corporate Office"
+                                                },
+                                                "theme": {
+                                                    "color": "#3399cc"
+                                                }
+                                            };
+                                            var rzp1 = new Razorpay(options);
+                                            rzp1.on('payment.failed', function (response) {
+                                                // Handle payment failure here (e.g., show an error message).
+                                                alert("Payment Failed");
+                                            });
+                                            document.getElementById('rzp-button1').onclick = function (e) {
+                                                rzp1.open();
+                                                e.preventDefault();
+                                            }
+                                        </script>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Kindly donate your money that you have
+                                    <br class="d-lg-none d-block">Concider the Growth of the world</h1>
+                                <img src="https://m.economictimes.com/thumb/msid-63293846,width-1200,height-900,resizemode-4,imgsize-49958/donation-charity.jpg" alt="Image 2" style="border-radius: 50%; max-width: 100%; height: auto;">
+                                <p class="mb-8 leading-relaxed">“Love can be a natural endowment, a present, or a gift. If it is not just a donation, it can be a divine talent. Since love is a silver bullet, it can make the unimaginable possible through the power of its inspiration. ("Love as dizzy
+                                    as a cathedral")” ― Erik Pevernagie </p>
+                                <div class="flex justify-center">
+                                    <form>
+                                       
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Kindly trust us. This is a safe bank.
+                                    <br class="d-lg-none d-block">Please trust us</h1>
+                                <img src="https://builtin.com/sites/www.builtin.com/files/styles/og/public/2023-04/Companies%20That%20Donate%20to%20Schools.jpg" alt="Image 3" style="border-radius: 50%; max-width: 50%; height: auto;">
+                                <p class="mb-8 leading-relaxed">“Love can be a natural endowment, a present, or a gift. If it is not just a donation, it can be a divine talent. Since love is a silver bullet, it can make the unimaginable possible through the power of its inspiration. ("Love as dizzy
+                                    as a cathedral")” ― Erik Pevernagie </p>
+                                <div class="flex justify-center">
+                                    <form >
+                                        
+                                      
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <img class="https://media.istockphoto.com/id/467910891/photo/piggy-bank-requesting-donations.jpg?s=612x612&w=0&k=20&c=PVxnKA2AdwtcGZdw2nYWETJ7Pfi3ozbD1ozH_n9Apis=" alt="hero" src="D:\ruthravignesh bank\pigbank.jpg">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact" class="text-gray-600 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto border-2 border-gray-800 p-6 rounded-lg">
+                    <form action="#" method="post">
+                        <div class="flex flex-wrap -m-2">
+                            <div class="p-2 w-full">
+                                <div class="relative">
+                                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-800 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                            </div>
+                            <div class="p-2 w-full">
+                                <div class="relative">
+                                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-800 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                            </div>
+                            <div class="p-2 w-full">
+                                <div class="relative">
+                                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                    <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border-2 border-gray-800 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                </div>
+                            </div>
+                            <div class="p-2 w-full flex justify-between">
+                                <button class="flex mx-auto text-white bg-indigo-500 border-2 border-indigo-500 py-2 px-8 font-bold focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                                <button class="flex mx-auto text-white bg-red-500 border-2 border-red-500 py-2 px-8 font-bold focus:outline-none hover:bg-red-600 rounded text-lg">Refresh</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                <div class="p-2 m-0 w-full flex flex-col justify-center items-center py-8 mt-8 text-white text-center bg-gray-900">
+                    <a class="text-indigo-500" href="mailto:harshjain@gmail.com">ruthravignesh2003@gmail.com</a>
+                    <br>
+                    <br>
+                    <div class="inline-flex space-x-6"> 
+                        <a class="text-gray-500" href="https://example.com/facebook">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-500" href="https://example.com/twitter">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-500" href="https://example.com/instagram">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M20 2H4a2 2 0 00-2 2v16a2 2 0 002 2h16a2 2 0 002-2V4a2 2 0 00-2-2zm-2.01 2H6A2 2 0 004 4.01v15.98c0 1.09.89 1.97 1.98 1.97h12.04A1.98 1.98 0 0022 19.99V4.01A1.98 1.98 0 0020.02 2z"></path>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <br>
+                    <p>&copy; 2023 The Spark Foundation. All rights reserved.</p> 
+                </div>
+                
+            
+        </section>
+    </body>
+
+</html>
