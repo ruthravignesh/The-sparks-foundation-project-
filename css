@@ -1,0 +1,32 @@
+.search-box {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #000000;
+    margin-right:80px; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carousel-indicators {
+    top: 110%;
+}
+.custom-button {
+    font-weight: bold; 
+    border: 2px solid #FF5733;
+    background-color: #FF5733;
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+      background-color: #FF8844; 
+    }
